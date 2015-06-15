@@ -1,6 +1,6 @@
 import unittest
-from inmemorystorage import InMemoryStorage
-from inmemorystorage.storage import InMemoryDir, InMemoryFile
+from ps_django_inmemorystorage import InMemoryStorage
+from ps_django_inmemorystorage.storage import InMemoryDir, InMemoryFile
 from django.core.files.base import ContentFile
 
 class MemoryStorageTests(unittest.TestCase):
