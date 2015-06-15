@@ -109,7 +109,7 @@ TEMPLATE_DIRS = (
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 NOSE_ARGS = [
     '--cover-branches',
-    '--cover-package=ps_sms',
+    '--cover-package=ps_django_inmemorystorage',
     'test_project',
 ]
 
