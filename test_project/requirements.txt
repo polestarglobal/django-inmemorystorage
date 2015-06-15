@@ -1,0 +1,10 @@
+--extra-index-url http://polestar:Polestar1@pypi.polestar-internal.com/
+Django==1.4.13
+django-hudson
+django_nose
+south==0.8.4
+mock==1.0.1
+unittest2
+nose
+nosexcover
+pylint==1.3
