@@ -1,5 +1,6 @@
 [meta]
-version = 0.1.1
+version = 0.1.2
+long_name = ps_django_inmemorystorage
 description = A non-persistent in-memory data storage backend for Django.
 name = ps_django_inmemorystorage
-long_name = ps_django_inmemorystorage
+
