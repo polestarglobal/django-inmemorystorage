@@ -1,1 +1,1 @@
-include README.rst LICENSE tests.py
+recursive-include ps_django_inmemorystorage *.py METADATA

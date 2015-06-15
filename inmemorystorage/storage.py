@@ -5,8 +5,10 @@ from django.core.files.storage import Storage
 from django.core.files.base import ContentFile
 from django.utils.encoding import filepath_to_uri
 
+
 class PathDoesNotExist(Exception):
     pass
+
 
 class InMemoryNode(object):
     """
@@ -18,6 +20,7 @@ class InMemoryNode(object):
         child.parent = self
         self.children[name] = child
 
+
 class InMemoryFile(InMemoryNode):
     """
     Stores contents of file and stores reference to parent.
@@ -25,6 +28,7 @@ class InMemoryFile(InMemoryNode):
     def __init__(self, contents='', parent=None):
         self.contents = contents
         self.parent = parent
+
 
 class InMemoryDir(InMemoryNode):
     """
@@ -91,6 +95,7 @@ class InMemoryDir(InMemoryNode):
         file.contents = content
         return path
 
+
 class InMemoryStorage(Storage):
     """
     Django storage class for in-memory filesystem.
@@ -124,4 +129,3 @@ class InMemoryStorage(Storage):
         if self.base_url is None:
             raise ValueError("This file is not accessible via a URL.")
         return urlparse.urljoin(self.base_url, filepath_to_uri(name))
-
